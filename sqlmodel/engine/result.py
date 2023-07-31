@@ -69,8 +69,8 @@ class Result(_Result[_T], Generic[_T]):
     def scalar_one(self) -> _T:
         return super().scalar_one()  # type: ignore
 
-    def scalar_one_or_none(self) -> Optional[_T]:
-        return super().scalar_one_or_none()
+    def scalar_one_or_none(self) -> Optional[_T]:  # type: ignore
+        return super().scalar_one_or_none()  # type: ignore
 
     def one(self) -> _T:  # type: ignore
         return super().one()  # type: ignore
