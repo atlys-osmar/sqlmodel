@@ -1,6 +1,6 @@
 # Contributing
 
-First, you might want to see the basic ways to [help SQLModel and get help](help.md){.internal-link target=_blank}.
+First, you might want to see the basic ways to [help SQLModel and get help](help.md){.internal-link target=\_blank}.
 
 ## Developing
 
@@ -86,9 +86,9 @@ Most of the tests actually run against the example source files in the documenta
 
 This helps making sure that:
 
-* The documentation is up to date.
-* The documentation examples can be run as is.
-* Most of the features are covered by the documentation, ensured by test coverage.
+- The documentation is up to date.
+- The documentation examples can be run as is.
+- Most of the features are covered by the documentation, ensured by test coverage.
 
 During local development, there is a script that builds the site and checks for any changes, live-reloading:
 

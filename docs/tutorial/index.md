@@ -58,7 +58,7 @@ $ cd sqlmodel-tutorial
 </div>
 
 !!! tip
-    Make sure you don't name it also `sqlmodel`, so that you don't end up overriding the name of the package.
+Make sure you don't name it also `sqlmodel`, so that you don't end up overriding the name of the package.
 
 ### Make sure you have Python
 
@@ -72,7 +72,7 @@ You can check which version you have with:
 
 ```console
 $ python3 --version
-Python 3.6.9
+Python 3.11
 ```
 
 </div>
@@ -81,11 +81,11 @@ There's a chance that you have multiple Python versions installed.
 
 You might want to try with the specific versions, for example with:
 
-* `python3.11`
-* `python3.10`
-* `python3.9`
-* `python3.8`
-* `python3.7`
+- `python3.11`
+- `python3.10`
+- `python3.9`
+- `python3.8`
+- `python3.7`
 
 The code would look like this:
 
@@ -123,7 +123,7 @@ In very short, a virtual environment is a small directory that contains a copy o
 And when you "activate" it, any package that you install, for example with `pip`, will be installed in that virtual environment.
 
 !!! tip
-    There are other tools to manage virtual environments, like <a href="https://python-poetry.org/" class="external-link" target="_blank">Poetry</a>.
+There are other tools to manage virtual environments, like <a href="https://python-poetry.org/" class="external-link" target="_blank">Poetry</a>.
 
     And there are alternatives that are particularly useful for deployment like <a href="https://docs.docker.com/get-started/" class="external-link" target="_blank">Docker</a> and other types of containers. In this case, the "virtual environment" is not just the Python standard files and the installed packages, but the whole system.
 
@@ -136,7 +136,7 @@ Here are the commands you could use:
     <div class="termy">
 
     ```console
-    // Remember that you might need to use python3.9 or similar 💡 
+    // Remember that you might need to use python3.9 or similar 💡
     // Create the virtual environment using the module "venv"
     $ python3 -m venv env
     // ...here it creates the virtual enviroment in the directory "env"
@@ -196,11 +196,11 @@ As **SQLModel** is built on top of <a href="https://www.sqlalchemy.org/" class="
 
 ## Install DB Browser for SQLite
 
-Remember that [SQLite is a simple database in a single file](../databases.md#a-single-file-database){.internal-link target=_blank}?
+Remember that [SQLite is a simple database in a single file](../databases.md#a-single-file-database){.internal-link target=\_blank}?
 
 For most of the tutorial I'll use SQLite for the examples.
 
-Python has integrated support for SQLite, it is a single file read and processed from Python. And it doesn't need an [External Database Server](../databases.md#a-server-database){.internal-link target=_blank}, so it will be perfect for learning.
+Python has integrated support for SQLite, it is a single file read and processed from Python. And it doesn't need an [External Database Server](../databases.md#a-server-database){.internal-link target=\_blank}, so it will be perfect for learning.
 
 In fact, SQLite is perfectly capable of handling quite big applications. At some point you might want to migrate to a server-based database like <a href="https://www.postgresql.org/" class="external-link" target="_blank">PostgreSQL</a> (which is also free). But for now we'll stick to SQLite.
 

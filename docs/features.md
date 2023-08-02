@@ -16,7 +16,7 @@ It's all based on standard <abbr title="Python currently supported versions, 3.7
 
 If you need a 2 minute refresher of how to use Python types (even if you don't use SQLModel or FastAPI), check the FastAPI tutorial section: <a href="https://fastapi.tiangolo.com/python-types/" class="external-link" target="_blank">Python types intro</a>.
 
-You will also see a 20 seconds refresher on the section [Tutorial - User Guide: First Steps](tutorial/index.md){.internal-link target=_blank}.
+You will also see a 20 seconds refresher on the section [Tutorial - User Guide: First Steps](tutorial/index.md){.internal-link target=\_blank}.
 
 ## Editor support
 
@@ -24,11 +24,11 @@ You will also see a 20 seconds refresher on the section [Tutorial - User Guide: 
 
 Here's how your editor might help you:
 
-* in <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
+- in <a href="https://code.visualstudio.com/" class="external-link" target="_blank">Visual Studio Code</a>:
 
 <img class="shadow" src="/img/index/autocompletion02.png">
 
-* in <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
+- in <a href="https://www.jetbrains.com/pycharm/" class="external-link" target="_blank">PyCharm</a>:
 
 <img class="shadow" src="/img/features/autocompletion01.png">
 
@@ -41,7 +41,7 @@ You won't need to keep guessing the types of different attributes in your models
 <img class="shadow" src="/img/index/autocompletion01.png">
 
 !!! info
-    Don't worry, adopting this in-development standard only affects/improves editor support.
+Don't worry, adopting this in-development standard only affects/improves editor support.
 
     It doesn't affect performance or correctness. And if the in-progress standard was deprecated your code won't be affected.
 
@@ -67,9 +67,9 @@ There was a lot of research and effort dedicated to make it that way.
 
 That means you get all of **Pydantic's features**, including automatic data **validation**, **serialization**, and **documentation**. You can use SQLModel in the same way you can use Pydantic.
 
-You can even create SQLModel models that do *not* represent SQL tables. In that case, they would be **the same as Pydantic models**.
+You can even create SQLModel models that do _not_ represent SQL tables. In that case, they would be **the same as Pydantic models**.
 
-This is useful, in particular, because now you can create a SQL database model that *inherits* from another non-SQL model. You can use that to **reduce code duplication** a lot. It will also make your code more consistent, improve editor support, etc.
+This is useful, in particular, because now you can create a SQL database model that _inherits_ from another non-SQL model. You can use that to **reduce code duplication** a lot. It will also make your code more consistent, improve editor support, etc.
 
 This makes it the perfect combination for working with SQL databases in **FastAPI** applications. 🚀
 
@@ -95,5 +95,5 @@ But when you have more exotic use cases that require more complex features, you 
 
 ## Tested
 
-* 100% <abbr title="The amount of code that is automatically tested">test coverage</abbr> (currently 97%, reaching 100% in the coming days/weeks).
-* 100% <abbr title="Python type annotations, with this your editor and external tools can give you better support">type annotated</abbr> code base.
+- 100% <abbr title="The amount of code that is automatically tested">test coverage</abbr> (currently 97%, reaching 100% in the coming days/weeks).
+- 100% <abbr title="Python type annotations, with this your editor and external tools can give you better support">type annotated</abbr> code base.

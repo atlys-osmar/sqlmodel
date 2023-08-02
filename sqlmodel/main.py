@@ -1,4 +1,5 @@
 import ipaddress
+import sys
 import uuid
 import weakref
 from datetime import date, datetime, time, timedelta
@@ -14,7 +15,6 @@ from typing import (
     ForwardRef,
     List,
     Mapping,
-    NoneType,
     Optional,
     Sequence,
     Set,
@@ -26,6 +26,11 @@ from typing import (
     get_args,
     get_origin,
 )
+
+if sys.version_info >= (3, 9):
+    NoneType = type(None)
+else:
+    from typing import NoneType
 
 from pydantic import BaseModel
 from pydantic._internal._fields import PydanticGeneralMetadata

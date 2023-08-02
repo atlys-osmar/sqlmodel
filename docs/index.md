@@ -32,11 +32,11 @@ SQLModel is a library for interacting with <abbr title='Also called "Relational 
 
 The key features are:
 
-* **Intuitive to write**: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging. Designed to be easy to use and learn. Less time reading docs.
-* **Easy to use**: It has sensible defaults and does a lot of work underneath to simplify the code you write.
-* **Compatible**: It is designed to be compatible with **FastAPI**, Pydantic, and SQLAlchemy.
-* **Extensible**: You have all the power of SQLAlchemy and Pydantic underneath.
-* **Short**: Minimize code duplication. A single type annotation does a lot of work. No need to duplicate models in SQLAlchemy and Pydantic.
+- **Intuitive to write**: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging. Designed to be easy to use and learn. Less time reading docs.
+- **Easy to use**: It has sensible defaults and does a lot of work underneath to simplify the code you write.
+- **Compatible**: It is designed to be compatible with **FastAPI**, Pydantic, and SQLAlchemy.
+- **Extensible**: You have all the power of SQLAlchemy and Pydantic underneath.
+- **Short**: Minimize code duplication. A single type annotation does a lot of work. No need to duplicate models in SQLAlchemy and Pydantic.
 
 ## SQL Databases in FastAPI
 
@@ -76,18 +76,18 @@ Here's a quick example. ✨
 
 Imagine you have a SQL table called `hero` with:
 
-* `id`
-* `name`
-* `secret_name`
-* `age`
+- `id`
+- `name`
+- `secret_name`
+- `age`
 
 And you want it to have this data:
 
-| id | name | secret_name | age |
------|------|-------------|------|
-| 1  | Deadpond | Dive Wilson | null |
-| 2  | Spider-Boy | Pedro Parqueador | null |
-| 3  | Rusty-Man | Tommy Sharp | 48 |
+| id  | name       | secret_name      | age  |
+| --- | ---------- | ---------------- | ---- |
+| 1   | Deadpond   | Dive Wilson      | null |
+| 2   | Spider-Boy | Pedro Parqueador | null |
+| 3   | Rusty-Man  | Tommy Sharp      | 48   |
 
 ### Create a SQLModel Model
 
