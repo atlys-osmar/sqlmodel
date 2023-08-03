@@ -27,11 +27,6 @@ from typing import (
     get_origin,
 )
 
-if sys.version_info >= (3, 9):
-    NoneType = type(None)
-else:
-    from typing import NoneType
-
 from pydantic import BaseModel
 from pydantic._internal._fields import PydanticGeneralMetadata
 from pydantic._internal._model_construction import ModelMetaclass
@@ -539,11 +534,11 @@ class SQLModel(BaseModel, metaclass=SQLModelMetaclass, registry=default_registry
 
 def _is_field_noneable(field: FieldInfo) -> bool:
     if not field.is_required():
-        if field.annotation is None or field.annotation is NoneType:
+        if field.annotation is None or isinstance(field.annotation, type(None)):
             return True
         if get_origin(field.annotation) is Union:
             for base in get_args(field.annotation):
-                if base is NoneType:
+                if isinstance(base, type(None)):
                     return True
         return False
     return False
